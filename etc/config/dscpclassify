@@ -460,7 +460,7 @@ config rule
 	option class 'af21'
 
 config rule
-	option name 'Zoom Meetings v4'
+	option name 'Zoom Meetings'
 	option proto 'udp'
 	option dest_port '3478-3479'
 	option dest_port '8801-8810'
