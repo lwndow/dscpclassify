@@ -8,7 +8,6 @@ config global 'global'
 
 config ipset
   option name 'doh-set'
-  option match 'ip'
   entry '8.8.8.8'               # Google
   entry '8.8.4.4'               # Google
   entry '1.1.1.1'               # Cloudflare
@@ -32,20 +31,17 @@ config ipset
 
 config ipset
   option name 'xcloud-set'
-  option match 'ip'
   entry '13.104.0.0/14'   # Western Europe
   entry '2603:1000::/24'  # Western Europe
 
 config ipset
   option name 'discord-set'
-  option match 'ip'
   entry '66.22.196.0/22' # Rotterdam, EU - discord-nlrtm1-1
   entry '66.22.204.0/22' # Chicago, US - discord-uschi1-1
   entry '66.22.246.0/24' # Brazil, BR - discord-brcoa1-2
 
 config ipset
   option name 'teams-set'
-  option match 'ip'
   entry '13.107.64.0/18'
   entry '52.112.0.0/14'
   entry '52.122.0.0/15'
@@ -54,7 +50,6 @@ config ipset
 # referenced from https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt
 config ipset
   option name 'zoom-set'
-  option match 'ip'
   entry '2407:30C0::/32'
   entry '2600:9000:2600::/48'
   entry '2620:123:2000::/40'
